@@ -7,7 +7,7 @@ on:
   workflow_call:
 
 jobs:
-  build:
+  build:if: github.repository == 'iOSRealRun/iOSRealRun-cli'
     strategy:
       matrix:
         os: [windows-latest, ubuntu-latest, macos-latest]
